@@ -1,5 +1,14 @@
+
 $(function () {
     getUserInfo();
+
+    // 实现退出功能
+    // let layer = layui.layer;
+    // layer.confirm('is not?', {icon: 3, title:'提示'}, function(index){
+    //     //do something
+        
+    //     layer.close(index);
+    // });
 })
 
 function getUserInfo() {
@@ -35,3 +44,4 @@ function renderAvatar(userInfo) {
         $('.layui-nav-img').attr('src', userInfo.user_pic).siblings('.text-avatar').hide();
     }
 }
+
