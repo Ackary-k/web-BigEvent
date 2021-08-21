@@ -3,12 +3,12 @@
   font-size: 12px;
 }
 
-.iconfont {
+.iconfont,
+.layui-icon {
   margin-right: 8px;
 }
 
 .layui-icon {
-  margin-right: 8px;
   margin-left: 20px;
 }
 
@@ -22,19 +22,20 @@ iframe {
 }
 
 a {
-  transition: none !important;
+  transition: none!important;
 }
 
-.userinfo {
-  height: 60px;
-  line-height: 60px;
+.user-info-box {
+  height: 70px;
   text-align: center;
+  line-height: 70px;
   font-size: 12px;
+  border-bottom: 1px solid #23262e;
   user-select: none;
 }
 
 .layui-side-scroll .userinfo {
-  border-bottom: 1px solid #282b33;
+    border-bottom: 1px solid #282b33;
 }
 
 .layui-nav-img {
@@ -46,7 +47,7 @@ a {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background-color: #009688;
+  background: #009688;
   border-radius: 50%;
   line-height: 40px;
   text-align: center;
