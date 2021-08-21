@@ -2,13 +2,18 @@
 $(function () {
     getUserInfo();
 
+    let layer = layui.layer;
     // 实现退出功能
-    // let layer = layui.layer;
-    // layer.confirm('is not?', {icon: 3, title:'提示'}, function(index){
-    //     //do something
-        
-    //     layer.close(index);
-    // });
+    $('#exit-btn').on('click', function () {
+        layer.confirm('您确定退出吗?', {icon: 3, title:'提示'}, function(index){
+            // 清空本地存储
+            localStorage.removeItem('token');
+            // 回到首页
+            location.href = './login.html';
+            layer.close(index);
+        });
+    });
+
 })
 
 function getUserInfo() {
