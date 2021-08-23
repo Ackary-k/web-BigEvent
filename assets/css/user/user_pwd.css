@@ -1,0 +1,15 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #f2f3f5;
+    padding: 15px!important;
+}
+
+.layui-form .layui-input {
+    width: 390px;
+}
+
