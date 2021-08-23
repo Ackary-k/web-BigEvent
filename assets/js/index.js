@@ -35,7 +35,6 @@ function getUserInfo() {
             }
 
             renderAvatar(res.data);
-            console.log(localStorage.getItem('token'));
         },
         
         /** 
@@ -64,7 +63,7 @@ function renderAvatar(userInfo) {
         $('.text-avatar').html(uname[0].toUpperCase()).siblings('.layui-nav-img').hide();
     } else {
         // 否则显示图片头像
-        $('.layui-nav-img').attr('src', userInfo.user_pic).siblings('.text-avatar').hide();
+        $('.layui-nav-img').attr('src', userInfo.user_pic).show().siblings('.text-avatar').hide();
     }
 }
 
