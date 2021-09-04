@@ -91,7 +91,7 @@ function publishArticle(fd) {
                 return layer.msg('文章发表失败!')
             }
             layer.msg('发表成功!');
-            location.href = '/article/art_list.html';
+            // location.href = '/article/art_list.html';
         },
     })
 }
