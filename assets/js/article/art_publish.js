@@ -88,7 +88,7 @@ function publishArticle(fd) {
         processData: false,
         success: function (res) {
             if (res.status !==0) {
-                return layer.msg('文章发表失败!')
+                return layer.msg('文章发表失败, 请重试!')
             }
             layer.msg('发表成功!');
             // location.href = '/article/art_list.html';
