@@ -17,7 +17,8 @@ $('#btnChooseImage').on('click', function () {
     $('#coverFile').click();
 })
 
-$('#coverFile').on('click', function () {
+$('#coverFile').on('change', function (e) {
+    let files = e.target.files;
     if (this.length === 0) {
         return
     }
